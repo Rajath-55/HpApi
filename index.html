@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.css"
+      integrity="sha256-Z12agm4mw1C2s2sXTx0wUlgmQdWqv1HCc/vgtpB0r9M="
+      crossorigin="anonymous"
+    />
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HpApi</title>
+  </head>
+  <body>
+      
+    
+      <nav class="navbar navbar-expand-md navbar-dark  sticky-top">
+        <a class="navbar-brand hp" href="#">HPWorld</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active newfont" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link newfont" href="#characterget">Characters</a>
+            <a class="nav-item nav-link newfont" href="#spellget">Spells</a>
+            <a class="nav-item nav-link newfont" href="#houseget">Houses</a>
+            <a class="nav-item nav-link newfont" href="#sortget">Sorting Hat</a>
+            
+          </div>
+        </div>
+      </nav>
+      <div id="landing">
+      <div class="container-fluid">
+        <div class="middle">
+          <h1 class="display-2 text-center hp">PotterWorld</h1>
+          <h4 class="display-5 newfont text-center pad">
+            A place for all Harry Potter fans.
+          </h4>
+          <p class="lead newfont text-center marg">
+            "It does not do well to dwell on dreams and forget to live." ― Albus
+            Dumbledore
+          </p>
+          <hr class="bright" />
+          <p class="lead newfont text-center marg">
+            So what are we waiting for? Let's dive deep into the magical world
+            of Harry, his friends and his ordeals!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="features">
+      <div class="container-fluid">
+        <div class="container">
+          <h5 class="display-3 hp marg-bot">Things to explore:</h5>
+          <p></p>
+          <div class="jumbotron gradient">
+            <p class="lead newfont">
+              All your favourite and not-so-favourite characters, from the first
+              book to the last. Search for anyone and get to know more about
+              their life!
+            </p>
+            <a href="#characterget" class="btn btn-dark newfont gap"
+              >All Characters!</a
+            ><br />
+
+            <p class="lead newfont">
+              All the spells: the good, the bad and the ugly ones right here.
+              Take a look!
+            </p>
+            <a href="#spellget" class="btn btn-dark newfont gap">All Spells!</a
+            ><br />
+
+            <p class="lead newfont">
+              Ever wished to get the admission letter at 11, waiting for the day
+              when you get sorted? Look no further, as now you can finally be
+              sorted into the house you rightfully belong to!
+            </p>
+            <a href="#sortget" class="btn btn-dark newfont gap"
+              >Get Sorted!</a
+            ><br />
+            <p class="lead newfont">
+              All the 4 houses, in no particular order of preference (Although
+              most of us have our least favourite one set :P)!
+            </p>
+            <a href="#houseget" class="btn btn-dark newfont">All Houses!</a>
+          </div>
+          <h5 class="newfont">So, lets get going then!</h5>
+          <p></p>
+          <hr />
+        </div>
+      </div>
+    </div>
+
+   
+
+    <div id="houses">
+      <div class="container-fluid">
+        <div class="jumbotron-fluid gradient">
+          <h3 class="display-3 hp text-center marg-bot marg">Houses in Hogwarts</h3>
+          <p class="lead newfont">
+            The Four founding members' houses listed in no particular order of
+            preference
+          </p>
+          
+        </div>
+        <form class="form-inline my-2 my-lg-0 marg-bot" >
+            <input
+              class="form-control mr-sm-2 newfont"
+              type="search"
+              id="searchHouse"
+              placeholder="House Name"
+              aria-label="Search"
+            />
+
+            <a class="btn btn-dark my-2 my-sm-0 newfont" href="#houseget">
+              Search
+            </a>
+
+          </form>
+
+          <p></p>
+          
+         
+
+        <div id="houseget" class="row padding"></div>
+      </div>
+    </div>
+    <div id="Sorting" class="full">
+        <div class="container-fluid ">
+          <h3 class="display-3 hp text-center marg-bot ">The Sorting Ceremony</h3>
+          <div class="jumbotron gradient-dark">
+            <p class="lead newfont">
+              This is where you get sorted by the magical sorting hat, based on
+              your personality.
+            </p>
+            <button class="btn btn-success newfont marg-bot" onclick="sortNow()">Sort Me!</button>
+            <div id="sortget" class="row padding"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="characters">
+        <div class="container-fluid">
+          <h3 class="display-3 hp text-center marg-bot">
+            Characters from Harry Potter
+          </h3>
+          <p class="lead newfont">
+            All the characters from the magical world of Hogwarts and more!
+          </p>
+          <form class="form-inline my-2 my-lg-0 marg-bot">
+              <input
+                class="form-control mr-sm-2 newfont"
+                type="search"
+                id="searchCharacter"
+                placeholder="Character"
+                aria-label="Search"
+              />
+              <a class="btn btn-dark my-2 my-sm-0 newfont" href="#characterget">
+                Search
+              </a>
+              <button class="btn btn-success leftmarg newfont" type="button" data-toggle="collapse" data-target="#characterget" aria-expanded="false" aria-controls="collapseExample">
+                Show All
+              </button>
+            </form>
+            <p class="lead newfont marg-bot marg">The Show All button toggles the character list.</p>
+           
+               
+            
+          <div id="characterget" class="row padding"></div>
+        </div>
+      </div>
+    <div id="spells">
+      <div class="container-fluid">
+        <h3 class="display-3 hp text-center marg-bot marg">
+          Spells from the Wizarding World
+        </h3>
+        <p class="lead newfont">
+          All spells, dark or forbidden, easy or tough. All of them right here!
+        </p>
+
+        <form class="form-inline my-2 my-lg-0 marg-bot">
+          <input
+            class="form-control mr-sm-2 newfont"
+            type="search"
+            id="searchSpell"
+            placeholder="Spell"
+            aria-label="Search"
+          />
+          <a class="btn btn-dark my-2 my-sm-0 newfont" href="#spellget">
+            Search
+          </a>
+          <button class="btn btn-success leftmarg newfont" type="button" data-toggle="collapse" data-target="#spellget" aria-expanded="false" aria-controls="collapseExample">
+            Show All
+          </button>
+        </form>
+        <p class="lead newfont marg-bot marg">The Show All button toggles the spells list.</p>
+        <div id="spellget" class="row padding">
+
+        </div>
+      </div>
+      <p class="marg-bot"></p>
+    </div>
+
+    <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+    <!-- <div class="jumbotron text-center gradient">
+        <div class="row">
+    <h4 class="display-5 newfont">&copy; Rajath V</h4>
+    <a href="rajath-55.github.io" class="btn btn-light leftmarg newfont">My site</a>
+</div>
+</div> -->
+ 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+      integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+*{
+    /* background-attachment: fixed; */
+    scroll-behavior: smooth;
+    margin:0;
+   
+    color:white;
+    /* font-family:"harrp" !important; */
+}
+body{
+    background: rgb(8,17,26) !important;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@font-face{
+    font-family:"cardhead";
+    src:url("./css/dum2/dum2.ttf");
+}
+@font-face{
+    font-family:"cardtext";
+    src:url("./css/dum2/dum2cud.ttf");
+}
+@font-face{
+    font-family:"newfont";
+    src:url("./css/Animales\ Fantastic.otf");
+}
+@font-face{
+    font-family:'harrp';
+    src: url("./css/parry-hotter.regular.ttf")
+    
+}
+/* .colorchange{
+    background:linear-gradient(0,0,0 blue, green, yellow);
+} */
+.monts{
+    font-family:"Montserrat";
+}
+.montsa{
+    font-family:"Montserrat" !important;
+    color:black !important;
+}
+
+.hp{
+    font-family:"harrp" !important;
+    color:#ccb200;
+    padding-top:3rem;
+    /* margin-bottom:3rem; */
+}
+.leftmarg{
+    margin-left:1rem;
+}
+
+#landing{
+    background: url("./img/interior.JPG") !important;;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height:100vh;
+}
+.navbar{
+    /* color:rgba(0,0,0,0.8) !important;
+     */
+     background-attachment: fixed;
+     background:url("./img/glasses.JPG")
+}
+.navbar a{
+    color:#ccb200 !important;
+}
+
+.newfont{
+    font-family: "newfont", sans-serif;
+    
+}
+.dark{
+    background: darkslategray !important;
+}
+.cardhead{
+    font-family:"cardhead" !important;
+    color:Firebrick;
+    font-size:1.5rem;
+    font-weight:600; 
+}
+.marg{
+    padding-top:5rem;
+}
+.full{
+    height:100vh !important;
+}
+
+.marg-bot{
+  margin-bottom:4rem;  
+}
+.back-to-top{
+    position:fixed;
+    bottom : 1.4rem;
+    right:1.4rem;
+    display:none;
+}
+
+#features{
+    background-attachment: fixed;
+    background: url("./img/features.PNG");
+}
+.gap{
+    margin: 1rem ;
+}
+#features  p{
+    color:black;
+    text-decoration:  2px solid;
+    font-weight:bolder;
+}
+.gradient{
+    background:rgba(255,245,245,0.4) !important;
+}
+#characters{
+   
+    background: url("./img/characters.JPG");
+    background-attachment: fixed;
+    /* overflow-y: scroll; */
+}
+
+#houses{
+    
+    background:url("./img/houses.PNG");
+    background-attachment: fixed;
+}
+#houses p{
+    color:black;
+}
+#houses h3{
+    font-weight:700;
+}
+#spells p{
+    color:black;
+}
+
+#spells{
+    
+    background:url("./img/houses.JPG");
+    background-attachment: fixed;
+}
+#Sorting{
+    background:url("./img/Sorting.JPG");
+    background-attachment: fixed;
+}
+.gradient-dark{
+    background: rgba(0,0,0,0.6) !important;
+}
+.white{
+    color:white !important;
+}
